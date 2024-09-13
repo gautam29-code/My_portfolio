@@ -1,0 +1,581 @@
+/*General Styles*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    /* background-color: #0d0d0d; */
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .left {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .right ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav .right ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .right ul li a:hover {
+    background-color: #36c95d;
+    color: #0d0d0d;
+    border-radius: 4px;
+}
+
+/* Hero Section Styles */
+#home {
+    height: 100vh;
+    background: url('images/215835-wallpaper-design-website.jpg') no-repeat center center/cover;
+    /* Replace with your background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    /* Adjusted for the fixed nav */
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-text {
+    flex: 1;
+    color: yellow;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-image img {
+    width: 300px;
+    /* Adjust size as needed */
+    height: 300px;
+    /* Ensures the image stays square for the circle effect */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image scales correctly inside the circle */
+    border: 4px solid #19130e24;;
+    /* Optional: Adds a white border around the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a subtle shadow for depth */
+}
+
+/*about section*/
+
+.about-section {
+    padding: 60px 0;
+    background-color: #f0f2f5;
+    /* Light grey background */
+}
+
+.about-section .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.about-section .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+}
+
+.about-image img {
+    width: 277px;
+    /* Adjust size as needed */
+    height: 387px;
+    /* Ensures the image stays square for the circle effect */
+    border-radius: 14%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image scales correctly inside the circle */
+    border: 6px solid #fff;
+    /* Adds a white border around the circle */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow for depth */
+}
+
+.about-content {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+}
+
+.about-content .sub-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+/* Education Section Styles */
+.education-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    /* Separates the education section visually */
+}
+
+.education-section h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.education-section ul {
+    list-style: none;
+    /* Removes bullet points */
+    padding: 0;
+}
+
+.education-section ul li {
+    margin-bottom: 20px;
+}
+
+.education-section ul li strong {
+    font-size: 20px;
+    color: #000;
+}
+
+.education-section ul li p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/*skill section*/
+
+.skills-section {
+    padding: 60px 0;
+    background-color: #1c1c1c;
+    /* Dark background */
+    color: #ffffff;
+    /* Text color */
+}
+
+.skills-section .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.skills-section .sub-title {
+    font-size: 30px;
+    color: #00f7ff;
+    /* Light green color */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Technical Skills */
+.technical-skills {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.technical-skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-bar p {
+    width: 100px;
+}
+
+.bar {
+    width: 100%;
+    background: #333;
+    height: 10px;
+    position: relative;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.bar .html {
+    width: 80%;
+    background: #00f7ff;
+}
+
+.bar .css {
+    width: 70%;
+    background: #00f7ff;
+}
+
+.bar .javascript {
+    width: 60%;
+    background: #00f7ff;
+}
+
+.bar .sql {
+    width: 60%;
+    background: #00f7ff;
+}
+
+.bar .python {
+    width: 70%;
+    background: #00f7ff;
+}
+
+.bar .flask {
+    width: 60%;
+    background: #00f7ff;
+}
+
+.percentage {
+    width: 50px;
+    text-align: center;
+}
+
+/* Professional Skills */
+.professional-skills {
+    flex: 1;
+    text-align: center;
+}
+
+.professional-skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.circle-skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    margin: 10px;
+    position: relative;
+}
+
+.circle-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #00f7ff;
+}
+
+.circle .number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.circle p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #444;
+    margin-top: 50px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-text {
+        margin-bottom: 20px;
+    }
+
+    nav .right ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/*projects section*/
+
+.projects-section {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    /* Light background */
+    text-align: center;
+    color: #333;
+    /* Dark text */
+}
+
+.projects-section .container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.projects-section .sub-title {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.projects-section .description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Project Card Styling */
+.project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 200px;
+}
+
+.project-card .project-info {
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.project-card .button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #00b4d8;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-cards a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit text color */
+}
+
+
+.project-card .button:hover {
+    background-color: #0077b6;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/*contact section*/
+
+#contact {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    /* Light background color */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+}
+
+.contact-left,
+.contact-right {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+}
+
+.contact-left .sub-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-left .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.contact-left .social-icons a:hover {
+    color: #007bff;
+    /* Change color on hover */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    width: 100%;
+    padding: 9px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-right form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-right form button:hover {
+    background-color: #0056b3;
+}
